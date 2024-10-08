@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rende con DJango</title>
+</head>
+<body>
+    <h1 style="color: blue;">Hola mundo con DJango usando render</h1>
+
+    <h2>{{ backend }}</h2>
+
+    <form action="/" method="post">
+        {% csrf_token %}  <!-- Token de seguridad -->
+        {{form}}
+
+        <button type="submit">save</button>
+    </form>
+</body>
+</html>
